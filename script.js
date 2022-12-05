@@ -41,7 +41,6 @@ function generatePassword() {
 }
 
 function calculateQuality() {
-  // T*0.25 + M*0.15 + N*0.25 + S*0.35 = 100
   const percent = Math.round(
     (passwordLength / 64) * 25 +
       (upperCaseCheckEl.checked ? 15 : 0) +
